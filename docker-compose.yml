@@ -1,0 +1,11 @@
+version: "3"
+services:
+  counter-db:
+    image: library/postgres:12.0
+    ports:
+    - "5432:5432"
+    environment:
+      POSTGRES_DB: web
+      POSTGRES_USER: web
+      POSTGRES_PASSWORD: web
+
